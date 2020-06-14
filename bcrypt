@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# vi: ft=ruby
+require 'bcrypt'
+require 'base64'
+
+plain = ARGV[0]
+puts Base64.strict_encode64 BCrypt::Passsword.create password
